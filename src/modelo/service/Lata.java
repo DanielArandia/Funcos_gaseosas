@@ -1,5 +1,7 @@
 package modelo.service;
 
-public class Lata {
+public interface Lata {
+
+    public String CrearFunkoLata();
 
 }

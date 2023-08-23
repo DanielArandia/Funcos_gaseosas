@@ -1,14 +1,16 @@
 package modelo;
-import vista.Ventana;
+import cliente.Cliente;
 import controlador.Eventos;
+import vista.Ventana;
 
 public class Launcher {
 
 	public static void main(String[] args) {
 		
-		Logica l = new Logica();
+		Cliente cl = new Cliente();
 		
-		Eventos ev = new Eventos(l); 
+		Eventos ev = new Eventos(cl); 
+
 		
 		Ventana ventana = new Ventana(ev);
 	}

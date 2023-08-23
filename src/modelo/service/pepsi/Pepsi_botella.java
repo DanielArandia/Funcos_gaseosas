@@ -1,5 +1,11 @@
 package modelo.service.pepsi;
 
-public class Pepsi_botella {
+import modelo.service.Botella;
+
+public class Pepsi_botella implements Botella {
+
+    public String CrearFunkoBotella() {
+        return "Soy una botella de pepsi";
+    }
 
 }

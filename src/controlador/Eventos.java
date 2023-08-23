@@ -2,20 +2,30 @@ package controlador;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import modelo.Logica;
 
-public class Eventos implements ActionListener{
+import javax.swing.JButton;
+
+import cliente.Cliente;
+
+public class Eventos implements ActionListener {
 	
-	Logica l;
-	
-	public Eventos(Logica l) {
-		this.l = l;
+	Cliente cl;
+	     
+	public Eventos(Cliente cl) {
+		this.cl = cl;
 	}
-	
+
+
 
 	public void actionPerformed(ActionEvent e) {
-		System.out.println(l.darMensaje());
-		
-	}
+		JButton button = (JButton) e.getSource();
 
+		if(button.getText() == "Cocacola" ){
+			cl.cocacola();
+		}
+		else if(button.getText()=="Pepsi"){
+			cl.pepsi();
+		}
+	}
+	
 }

@@ -1,5 +1,8 @@
 package modelo.service;
 
-public class Industria {
+public interface Industria {
+
+    public Lata Lata();
+    public Botella Botella();
 
 }

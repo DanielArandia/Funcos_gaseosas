@@ -9,10 +9,12 @@ public class Ventana extends JFrame{
 	
 	private Eventos ev;
 	
-	public Ventana(Eventos e) {
+	public Ventana(Eventos e ) {
 		super("Mi ventana");
 		ev = e;
 		initComponents();
+		
+
 	
 	}
 	public void initComponents() {
@@ -25,10 +27,17 @@ public class Ventana extends JFrame{
 		
 	}
 	public void addButtons() {
-		JButton button1 = new JButton("Cocacola");
+		JButton button1;
+		button1 = new JButton("Cocacola");
 		button1.setBounds(90, 80, 200, 60);
 		button1.addActionListener(ev);
 		this.add(button1);
+
+		JButton button2;
+		button2 = new JButton("Pepsi");
+		button2.setBounds(90, 200, 200, 60);
+		button2.addActionListener(ev);
+		this.add(button2);
 			
 		
 	}

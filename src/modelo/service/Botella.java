@@ -1,5 +1,5 @@
 package modelo.service;
 
-public class Botella {
-
+public interface Botella {
+    public String CrearFunkoBotella();
 }
